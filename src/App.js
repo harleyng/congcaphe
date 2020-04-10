@@ -3,7 +3,7 @@ import './App.css';
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
 
 import MasterLayout from './layouts/master/MasterLayout.jsx';
-import Menu from './pages/Menu';
+import Menu from './pages/Menu.jsx';
 
 function App() {
   return (
