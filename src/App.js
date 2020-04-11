@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.css';
+import './assets/css/style.css';
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
 
-import MasterLayout from './layouts/master/MasterLayout.jsx';
-import Menu from './pages/Menu.jsx';
+import MasterLayout from './layouts/master/MasterLayout';
+import Menu from './pages/Menu';
 
 function App() {
   return (
