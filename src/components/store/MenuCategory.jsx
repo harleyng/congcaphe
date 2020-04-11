@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Item from './Item'
 
-export default class Category extends Component {
+export default class MenuCategory extends Component {
     state = {
         listItems: [
             {

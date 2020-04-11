@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class Item extends Component {
+export default class MenuItem extends Component {
     render() {
         return (
             <div className="item-container">
@@ -10,7 +10,7 @@ export default class Item extends Component {
                     </a>
                 </div>
                 <div className="item-content">
-                    {this.props.name}
+                    <div className="item-name">{this.props.name}</div>
                 </div>
             </div>
         )

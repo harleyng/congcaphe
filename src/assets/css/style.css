@@ -23,7 +23,7 @@ html, body {
 body {
     font-size: 14px !important;
     color: #555555;
-    letter-spacing: .1rem;
+    letter-spacing: .05rem;
 }
 a, a:link, a:visited, a:hover, a:active {
     text-decoration: none !important; 
@@ -44,7 +44,7 @@ ul {
 .menu-item:not(.drop-item) span{
     text-transform: uppercase;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
 }
 .drop-item span {display: inline-block;}
 .menu-item span::after {
@@ -159,7 +159,7 @@ ul {
     border: solid #3c5e2c 2px;
     margin: 0 30px 20px 0;
     opacity: 1;
-    transition: opacity 1s ease;
+    transition: opacity .5s ease;
 }
 .item-container {
     float: left;
@@ -168,7 +168,55 @@ ul {
     opacity: .5;
 }
 .item-content {
-    font-family: 'BeauLuloClean-OneBold';
     color: #555555;
+}
+.item-name {
+    font-family: 'BeauLuloClean-OneBold';
     font-size: 13px;
+}
+
+/* //////////////////// 4.POSTS PAGE ///////////////////// */
+.post-item-container {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: solid #eeeeee 2px;
+}
+.item-img img {
+    height: 180px;
+    width: 290px;
+}
+.item-title {
+    font-family: 'BeauLuloClean-OneBold';
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.followPosts {
+    background-color: #eeeeee;
+    display: inline-block !important;
+    padding: 20px;
+    text-align: center;
+    color: #838383;
+}
+.followPosts-title {
+    font-size: 16px;
+}
+.followPosts img {
+    max-height: 60px;
+    margin: 10px 0 40px;
+}
+.followPosts-desc {
+    font-size: 18px;
+}
+.emailRegister-posts-container {
+    height: 40px;
+}
+.emailRegister-posts {
+    border: none;
+    width: 220px;
+    height: 100%;
+}
+.emailSubmit-posts {
+    height: 100%;
+    font-size: 15px;
+    padding: 6px 10px;
 }

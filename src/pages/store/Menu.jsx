@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Category from '../components/Category'
+import MenuCategory from '../../components/store/MenuCategory'
 
 export default class Menu extends Component {
     render() {
@@ -22,7 +22,7 @@ export default class Menu extends Component {
                         </ul>
                     </div>
                     <div className="col-8">
-                        <Category></Category>
+                        <MenuCategory></MenuCategory>
                     </div>
                 </div>
             </div>

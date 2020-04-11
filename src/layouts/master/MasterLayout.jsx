@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer'
+import Header from '../../components/layouts/Header';
+import Footer from '../../components/layouts/Footer'
 
 export default class MasterLayout extends Component {
     render() {

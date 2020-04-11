@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import facebookLogo from '../assets/img/facebook-logo.png'
-import instagramLogo from '../assets/img/instagram-logo.png'
-import youtubeLogo from '../assets/img/youtube-logo.png'
+import facebookLogo from '../../assets/img/facebook-logo.png'
+import instagramLogo from '../../assets/img/instagram-logo.png'
+import youtubeLogo from '../../assets/img/youtube-logo.png'
 
 export default class Footer extends Component {
     render() {

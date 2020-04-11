@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import logo from '../assets/img/logo.png'
+import logo from '../../assets/img/logo.png'
 
 
 export default class Header extends Component {
@@ -9,7 +9,7 @@ export default class Header extends Component {
                 <div className="container">
                     <ul className="row justify-content-between">
                         <li><a className="menu-item" href=""><span>câu chuyện</span></a></li>
-                        <li className="dropdown"><a className="menu-item" href=""><span>bảng tin</span></a>
+                        <li className="dropdown"><a className="menu-item" href="http://localhost:3000/posts"><span>bảng tin</span></a>
                             <ul className="dropdown-container">
                                 <li className="drop-item menu-item"><a href=""><span>Cộng</span></a></li>
                                 <li className="drop-item menu-item"><a href=""><span>Tin tức</span></a></li>
@@ -20,8 +20,8 @@ export default class Header extends Component {
                         </li>
                         <li className="dropdown"><a className="menu-item" href=""><span>tạp hoá</span></a>
                             <ul className="dropdown-container">
-                                <li className="drop-item menu-item"><a href=""><span>Thực đơn</span></a></li>
-                                <li className="drop-item menu-item"><a href=""><span>Quầy lưu niệm</span></a></li>
+                                <li className="drop-item menu-item"><a href="http://localhost:3000/menu"><span>Thực đơn</span></a></li>
+                                <li className="drop-item menu-item"><a href="http://localhost:3000/groceries"><span>Quầy lưu niệm</span></a></li>
                             </ul>
                         </li>
                         <li><a href=""><img className="logoCong" src={logo} alt="logo Cộng"/></a></li>
