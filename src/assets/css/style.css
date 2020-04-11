@@ -1,3 +1,10 @@
+/* Contents
+General Setup
+1. Header
+2. Footer
+3. Menu Page
+*/
+
 @font-face {
     font-family: 'BeauLuloClean-OneBold';
     src: url(../../fonts/BeauLuloClean-OneBold-35d252df500899288459e249b97525f5d41d.eot?#iefix) format('embedded-opentype'), url(../../fonts/BeauLuloClean-OneBold-4ce34c0eaf26a1818d6dc4bae56dbaf8.otf) format('opentype'), url(../../fonts/BeauLuloClean-OneBold-bb0cd1091bc6a5db5422e4e6cffb558a.woff) format('woff'), url(../../fonts/BeauLuloClean-OneBold-d1ee29797ead94565f78c9aa426ed32b.ttf) format('truetype'), url(../../fonts/BeauLuloClean-OneBold-6b4a34a4a40dc09d96ceab0014eed9b2.svg#BeauLuloClean-OneBold) format('svg');
@@ -25,9 +32,10 @@ a, a:link, a:visited, a:hover, a:active {
 ul {
     list-style: none;
 }
-/* //////////////////// MENU ///////////////////// */
+/* //////////////////// 1.MENU ///////////////////// */
 .menu {
     border-bottom: solid #55555555 2px;
+    margin-bottom: 30px;
 }
 .menu ul:not(.dropdown-container){
     margin: 35px 0;
@@ -92,7 +100,10 @@ ul {
     border-bottom: solid 1px #b9b8b8cc;
 }
 
-/* //////////////////// FOOTER ///////////////////// */
+/* //////////////////// 2.FOOTER ///////////////////// */
+.footer {
+    margin-top: 30px;
+}
 .socialContact {
     padding: 20px 0;
     border-top: solid #3c5e2c 2px;
@@ -132,8 +143,32 @@ ul {
     background-color: rgb(60, 94, 44);
     color: #fff;
     font-size: 12px;
-    word-spacing: .25rem;
+    word-spacing: .2rem;
 }
 .copyRight b {
     font-size: 16px;
+}
+
+/* //////////////////// 3.MENU PAGE ///////////////////// */
+.menuList {
+    line-height: 2rem;
+    padding-inline-start: 80px;
+}
+.item-img img {
+    max-height: 210px;
+    border: solid #3c5e2c 2px;
+    margin: 0 30px 20px 0;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+.item-container {
+    float: left;
+}
+.item-img img:hover {
+    opacity: .5;
+}
+.item-content {
+    font-family: 'BeauLuloClean-OneBold';
+    color: #555555;
+    font-size: 13px;
 }
