@@ -12,7 +12,6 @@ export default class MenuCategory extends Component {
                     cold: '29000'
                 },
                 desc: 'Vinacano - Vietnamese Americano - sự biến tấu đầy sáng tạo của Americano cùng cà phê pha phin Việt Nam, tạo nên thức uống thơm hương đậm vị, vừa hiện đại vừa mang đậm tinh thần truyền thống của dân tộc.',
-                url: '',
                 img_link: 'https://cong-news.appwifi.com/wp-content/uploads/2019/04/vinacanoda.jpg'
             },
             {
@@ -20,7 +19,6 @@ export default class MenuCategory extends Component {
                 name: 'CÀ PHÊ NÂU',
                 price: '35,000',
                 desc: 'Bạn sẽ chẳng thể tìm được ở đâu khác ngoài Việt Nam một ly Cà Phê Nâu - sự kết hợp kỳ lạ mà hoàn hảo giữa cà phê đen đắng và một chút sữa đặc béo ngọt.',
-                url: '',
                 img_link: 'https://cong-news.appwifi.com/wp-content/uploads/2019/03/caphenauda.jpg'
             },
             {
@@ -31,7 +29,6 @@ export default class MenuCategory extends Component {
                     cold: '39,000'
                 },
                 desc: 'Bản hòa tấu nhịp nhàng giữa cà phê nguyên chất và sữa tươi dịu ngọt đem đến thức uống đầy quyến rũ và tinh tế.',
-                url: '',
                 img_link: 'https://cong-news.appwifi.com/wp-content/uploads/2019/03/caphesuatuoida.jpg'
             },
         ]

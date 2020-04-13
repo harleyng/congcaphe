@@ -5,7 +5,7 @@ export default class MenuItem extends Component {
         return (
             <div className="item-container">
                 <div className="item-img">
-                    <a href={this.props.url}>
+                    <a href="http://localhost:3000/menu/">
                         <img src={this.props.img_link} alt={this.props.desc}/>
                     </a>
                 </div>

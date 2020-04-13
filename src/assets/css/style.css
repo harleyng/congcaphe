@@ -26,6 +26,7 @@ body {
     font-size: 14px !important;
     color: #555555;
     letter-spacing: .05rem;
+    line-height: 1.7 !important;
 }
 a, a:link, a:visited, a:hover, a:active {
     text-decoration: none !important; 
@@ -382,7 +383,7 @@ ul {
 }
 .job-desc {
     font-size: 16px;
-    padding: 10px 0;
+    padding: 10px 0 !important;
 }
 .detail {
     text-align: right;
