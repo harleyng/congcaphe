@@ -12,6 +12,7 @@
 ## Technologies 
 - Backend : PHP 
 - Frontend : HTML, CSS, JavaScript, Bootstrap, JQuery
+- Additional library: React, React-router-dom, React-helmet, 
 
 ### Source
 - https://congcaphe.com/
