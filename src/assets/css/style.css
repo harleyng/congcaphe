@@ -2,9 +2,10 @@
 General Setup
 1. Header
 2. Footer
-3. Menu Page
+3. About Page
 4. Posts Page
-5. Career Page
+5. Menu/ Groceries Page
+6. Career Page
 */
 
 @font-face {
@@ -25,7 +26,6 @@ html, body {
 body {
     font-size: 14px !important;
     color: #555555;
-    letter-spacing: .05rem;
     line-height: 1.7 !important;
 }
 a, a:link, a:visited, a:hover, a:active {
@@ -163,30 +163,22 @@ ul {
     font-size: 16px;
 }
 
-/* //////////////////// 3.MENU PAGE ///////////////////// */
-.menuList {
-    line-height: 2rem;
-    padding-inline-start: 80px;
+/* //////////////////// 3.ABOUT PAGE ///////////////////// */
+.about-container {
+    padding: 0 300px;
 }
-.item-img img {
-    max-height: 210px;
-    border: solid #3c5e2c 2px;
-    margin: 0 30px 20px 0;
-    opacity: 1;
-    transition: opacity .5s ease;
-}
-.item-container {
-    float: left;
-}
-.item-img img:hover {
-    opacity: .5;
-}
-.item-content {
+.about-title{
+    font-family: 'BeauLuloClean-OneBold';
+    font-size: 22px;
     color: #555555;
 }
-.item-name {
-    font-family: 'BeauLuloClean-OneBold';
-    font-size: 13px;
+.about-image img {
+    width: 840px;
+    padding: 40px 0 20px;
+}
+.about-content p{
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
 /* //////////////////// 4.POSTS PAGE ///////////////////// */
@@ -235,7 +227,34 @@ ul {
     padding: 6px 10px;
 }
 
-/* //////////////////// 4.CAREER PAGE ///////////////////// */
+/* //////////////////// 5.MENU/ GROCERIES PAGE ///////////////////// */
+.menuList {
+    line-height: 2rem;
+    padding-inline-start: 80px;
+    font-weight: 700;
+}
+.item-img img {
+    max-height: 210px;
+    border: solid #3c5e2c 2px;
+    margin: 0 30px 20px 0;
+    opacity: 1;
+    transition: opacity .5s ease;
+}
+.item-container {
+    float: left;
+}
+.item-img img:hover {
+    opacity: .5;
+}
+.item-content {
+    color: #555555;
+}
+.item-name {
+    font-family: 'BeauLuloClean-OneBold';
+    font-size: 13px;
+}
+
+/* //////////////////// 6.CAREER PAGE ///////////////////// */
 .career-intro-container {
     background: url(../img/career-intro.png);
     background-size: cover;
@@ -282,7 +301,6 @@ ul {
 .companyInfo {
     padding: 0 30px 44px;
     font-size: 16px;
-    font-weight: 400;
     border-bottom: dotted #eee 2px;
 }
 .career-item-container {
@@ -324,9 +342,6 @@ ul {
     margin: 20px 0;
     font-size: 17px;
 }
-.career-item-desc {
-    font-weight: 400;
-}
 .job-intro-container {
     background: url(../img/job-intro.jpg);
     background-size: cover;
@@ -337,7 +352,6 @@ ul {
 .job-intro-content {
     background: rgba(255, 241, 208, 0.9);
     padding: 80px 0 60px;
-    font-weight: 400;
     overflow: hidden;
 }
 .job-intro-content h1 {

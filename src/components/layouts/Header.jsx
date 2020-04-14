@@ -18,7 +18,7 @@ export default class Header extends Component {
                     <div className="row">
                         <div className="col-5">
                             <ul className="row justify-content-between">
-                                <li><a className="menu-item" href=""><span>câu chuyện</span></a></li>
+                                <li><a className="menu-item" href="/about"><span>câu chuyện</span></a></li>
                                 <li className="dropdown"><a className="menu-item" href="/posts"><span>bảng tin</span></a>
                                     <ul className="dropdown-container">
                                         <li className="drop-item menu-item"><a href=""><span>Cộng</span></a></li>
