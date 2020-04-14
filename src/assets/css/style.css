@@ -6,6 +6,7 @@ General Setup
 4. Posts Page
 5. Menu/ Groceries Page
 6. Career Page
+7. Store Page === Location Page
 */
 
 @font-face {
@@ -42,8 +43,9 @@ ul {
     z-index: 1;
 }
 .pageContent {
+    position: relative;
     padding: 30px 0;
-    transition: z-index .5s ease-out;
+    transition: z-index .3s ease-out;
 }
 /* //////////////////// 1.MENU ///////////////////// */
 .menu {
@@ -414,4 +416,55 @@ ul {
     border-radius: 25px;
     padding: 8px 15px;
     margin-top: 3px;
+}
+
+/* //////////////////// 6.LOCATION PAGE ///////////////////// */
+.store-map{
+    touch-action: pan-x pan-y;
+}
+.store-map iframe {
+    display: block;
+    z-index: 9 !important;
+}
+.store-map-table{
+    position: absolute !important;
+    height: 800px !important;
+    left: 2rem;
+    top: 0;
+    padding: 1rem 2rem 0.05rem;
+    width: 14rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background: white;
+}
+.store-map-table ul {
+    padding-inline-start: 0 !important;
+}
+.store-map-table ul li, .store-map-table .panel ul li a{
+    padding: 6px 0;
+    color: #363636;
+}
+.store-count{
+    padding-left: 20px;
+    font-size: 12px;
+    color: #cbcbcb;
+}
+.panel{
+    background: white;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+.store-country img {
+    margin-right: 10px;
+    height: 22px;
+}
+.store-country h5{
+    padding-top: 3px;
+    color: #000000;
+}
+.set {
+    padding: 10px 0 5px;
+}
+.filter {
+    border-bottom: solid #e9e9e9 1px;
 }
