@@ -7,6 +7,7 @@ General Setup
 5. Menu/ Groceries Page
 6. Career Page
 7. Store Page === Location Page
+8. Contact Page
 */
 
 @font-face {
@@ -168,6 +169,7 @@ ul {
 /* //////////////////// 3.ABOUT PAGE ///////////////////// */
 .about-container {
     padding: 0 300px;
+    margin: 0 auto !important;
 }
 .about-title{
     font-family: 'BeauLuloClean-OneBold';
@@ -175,10 +177,15 @@ ul {
     color: #555555;
 }
 .about-image img {
-    width: 840px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     padding: 40px 0 20px;
 }
 .about-content p{
+    margin: 0 auto;
+    width: 100%;
     font-size: 16px;
     margin-bottom: 5px;
 }
@@ -467,4 +474,62 @@ ul {
 }
 .filter {
     border-bottom: solid #e9e9e9 1px;
+}
+
+/* //////////////////// 8.CONTACT PAGE ///////////////////// */
+.pageTitle {
+    text-align: center;
+}
+.recruitmentContact .pageTitle h2 {
+    margin: 0px 0 30px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.contact-title {
+    color: #3c5e2c !important;
+    font-family: 'BeauLuloClean-OneBold';
+}
+.recruitmentContact .bannerCover{
+    position: relative;
+    background-attachment: fixed !important
+}
+.bannerCover {
+    background: url(https://congcaphe.com/_next/static/images/demo4-b9946de6aa1521bd6c5c433c84434a69.jpg) no-repeat center center/cover;
+}
+.recruitmentContact .hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    color: #fff;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 130px 0px 60px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    min-height: 25rem;
+}
+.contact-detail {
+    margin: 40px 300px 20px 300px;
+    line-height: 20px;
+    font-size: 16px;
+}
+.contact-list ul li {
+    margin-bottom: 20px;
+}
+.companyAddress {
+    margin-top: 40px;
+    padding-left: 40px;
+}
+.companyAddress h5 {
+    color: #232323;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+.companyAddress h6 {
+    margin-bottom: 0;
 }

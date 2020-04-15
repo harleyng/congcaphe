@@ -10,6 +10,7 @@ import Career from './pages/Career'
 import Detail from './pages/store/Detail'
 import About from './pages/About'
 import Store from './pages/Store'
+import Contact from './pages/Contact'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/product/:id/" component={Detail}/>
             <Route exact path="/career" component={Career}/>
             <Route exact path="/store" component={Store}/>
+            <Route exact path="/contact" component={Contact}/>
           </Switch>
         </BrowserRouter>
       </MasterLayout>
