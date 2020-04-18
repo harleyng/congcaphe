@@ -11,6 +11,7 @@ import Detail from './pages/store/Detail'
 import About from './pages/About'
 import Store from './pages/Store'
 import Contact from './pages/Contact'
+import Home from './pages/Home'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <MasterLayout>
         <BrowserRouter>
           <Switch>
+            <Route exact path="/" component={Home}/>
             <Route exact path="/about" component={About}/>
             <Route exact path="/posts" component={News}/>
             <Route exact path="/menu" component={Menu}/>

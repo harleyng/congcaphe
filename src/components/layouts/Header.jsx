@@ -36,7 +36,7 @@ export default class Header extends Component {
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-2 logoCong"><a href=""><img src={logo} alt="logo Cộng"/></a></div>
+                        <div className="col-2 logoCong"><a href="/"><img src={logo} alt="logo Cộng"/></a></div>
                         <div className="col-5">
                             <ul className="row justify-content-between">
                                 <li className="dropdown"><a className="menu-item" href="/career"><span>tuyển dụng</span></a>
