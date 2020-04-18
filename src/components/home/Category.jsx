@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import Item from './Item'
+import ReactDOM from 'react-dom';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
-export default class NewsCategory extends Component {
+export default class Category extends Component {
     state = {
         listItems: [
             {
@@ -29,6 +32,7 @@ export default class NewsCategory extends Component {
     }
     render() {
         return (
+            // <Carousel>
             <div> 
                 {this.props.children}
                 <div className="item">
@@ -45,7 +49,8 @@ export default class NewsCategory extends Component {
                     ))}
                 </div>
             </div>
-
+            // </Carousel> 
         )
     }
 }
+// ReactDOM.render(<Category />, document.querySelector('.demo-carousel'));
