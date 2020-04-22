@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="350" height="140" src="src/assets/img/logo.png">
+  <img width="350" height="160" src="src/assets/img/logo.png">
 </p>
 
 # CongCafe
@@ -62,5 +62,4 @@ npm install react-helmet
 ```
 
 ## Source
----
 https://congcaphe.com/
