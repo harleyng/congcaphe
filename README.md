@@ -46,7 +46,7 @@ You should move all files from the downloaded folder to the folder we have just 
 ### Bootstrap * [![Bootstrap](https://img.shields.io/badge/Bootstrap-v4.4.1-blueviolet)](https://getbootstrap.com/)
 
 ```
-yarn add bootstrap@4
+yarn add bootstrap
 ```
 
 ### React Router DOM * [![React-Router-DOM](https://img.shields.io/badge/React%20Router%20DOM-v5.1-blue)](https://www.npmjs.com/package/react-router-dom)
