@@ -1,6 +1,7 @@
+const config = require("./config-local.json");
 const MongoClient = require('mongodb').MongoClient;
 
-const url = "mongodb+srv://congadmin:1122334455@congcaphe-e0q94.mongodb.net/test?retryWrites=true&w=majority&useNewUrlParser=true&useUnifiedTopology=true";
+const url = config.mongoPath;
 const client = new MongoClient(url);
 
 async function run() {
