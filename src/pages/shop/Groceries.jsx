@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Helmet} from 'react-helmet'
-import GroceriesCategory from '../../components/store/GroceriesCategory'
+import GroceriesCategory from '../../components/shop/GroceriesCategory'
 
 export default class Groceries extends Component {
     render() {

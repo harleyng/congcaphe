@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Helmet} from 'react-helmet'
-import MenuCategory from '../../components/store/MenuCategory'
+import MenuCategory from '../../components/shop/MenuCategory'
 
 export default class Menu extends Component {
     render() {
