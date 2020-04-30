@@ -24,9 +24,10 @@ mongoose.connect(
         app.use('/api/menu', menuApiRouter);
         app.use('/api/grocery', groceryApiRouter);
 
-        app.listen(3001, (err) => {
+        const port = process.env.PORT || 3001
+        app.listen(port, (err) => {
             if (err) console.log(err);
-            else console.log('Server listen on port 3001');
+            else console.log('Server start success');
         })
     }
 })
