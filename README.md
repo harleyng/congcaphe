@@ -31,24 +31,18 @@ You have to download and install npm & Node.js before going to setup Yarn
 npm install yarn
 ```
 
-### Create React App  [![Create-React-App](https://img.shields.io/badge/Create%20React%20App-v3.4.1-green)](https://github.com/facebook/create-react-app)
-
-This is a React project, so we need to create a comfortable environment for React.
-
+### You have to start 2 server for server and client
+#### Server
 ```
-npx create-react-app congcaphe
-cd congcaphe
+npm install 
+npm start
+```
+
+#### Client
+```
+yarn
 yarn start
 ```
-
-You should move all files from the downloaded folder to the folder we have just created.
-
-### Additional Library
-
-```
-npm install
-```
-This command allow you to install all dependencies in package.json file
 
 ## Source
 https://congcaphe.com/
