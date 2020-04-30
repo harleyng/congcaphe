@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="340" height="160" src="frontend/src/assets/img/logo.png">
+  <img width="340" height="160" src="client/src/assets/img/logo.png">
 </p>
 
 # CongCafe
