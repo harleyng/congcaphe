@@ -3,11 +3,12 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-const menuApiRouter = require('./routers/shop/menu')
-const groceryApiRouter = require('./routers/shop/grocery')
+const menuApiRouter = require('./routers/shop/menu');
+const groceryApiRouter = require('./routers/shop/grocery');
+const config = require('./config/config');
 
 mongoose.connect(
-    'mongodb://localhost/congcaphe',
+    "mongodb+srv://congadmin:11223344@congcaphe-e0q94.mongodb.net/test?retryWrites=true&w=majority",
     { useUnifiedTopology: true, useNewUrlParser: true },
     (err) => {
     if (err) console.log(err);
@@ -16,7 +17,8 @@ mongoose.connect(
         const app = express();
 
         app.use(cors({
-            origin: 'http://localhost:3000'
+            origin: config.clientUrl,
+            credentials: true
         }));
         app.use(bodyParser.json());
         app.use(bodyParser.urlencoded({ extended:false }));
@@ -24,10 +26,10 @@ mongoose.connect(
         app.use('/api/menu', menuApiRouter);
         app.use('/api/grocery', groceryApiRouter);
 
-        const port = process.env.PORT || 3001
+        const port = process.env.PORT || 5000;
         app.listen(port, (err) => {
             if (err) console.log(err);
-            else console.log('Server start success');
+            else console.log(`Server listen on port ${port}`);
         })
     }
 })

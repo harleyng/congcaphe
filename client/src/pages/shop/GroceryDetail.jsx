@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import { Helmet } from 'react-helmet'
-import config from '../../config.json'
+import config from '../../config/config.json'
 
 
 export default class MenuDetail extends Component {
@@ -15,7 +15,7 @@ export default class MenuDetail extends Component {
     componentDidMount() {
         const id = this.props.match.params.id;
         axios
-            .get(config.baseUrl + `api/grocery/${id}`)
+            .get(config.apiUrl + `api/grocery/${id}`)
             .then(data => {
                 const dataApi = data.data.data;
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import config from '../../config.json'
+import config from '../../config/config.json'
 import MenuItem from './MenuItem'
 
 export default class MenuCategory extends Component {
@@ -9,9 +9,10 @@ export default class MenuCategory extends Component {
     }
     componentDidMount() {
         axios
-            .get(config.baseUrl + "api/menu")
+            .get(config.apiUrl + "api/menu")
             .then(data => {
                 const dataApi = data.data.data;
+                console.log(dataApi);
                 this.setState({ items: dataApi })
             })
             .catch(err => console.error(err))

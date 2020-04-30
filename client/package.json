@@ -2,9 +2,6 @@
   "name": "congcaphe",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "10.15.3"
-  },
   "dependencies": {
     "4": "^0.0.0",
     "@testing-library/jest-dom": "^4.2.4",
@@ -29,7 +26,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "cp src/config/production/config.js src/config/ && git push heroku master"
   },
   "eslintConfig": {
     "extends": "react-app"

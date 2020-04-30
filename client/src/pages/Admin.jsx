@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import config from '../config/config.json'
 import axios from 'axios'
 
 export default class Admin extends Component {
@@ -37,7 +38,7 @@ export default class Admin extends Component {
     componentDidMount() {
         axios({
             method: 'post',
-            url: 'http://localhost:3001/api/menu',
+            url: config.apiUrl + 'api/menu',
             data: { 
                 category: this.state.category,
                 name: this.state.name,

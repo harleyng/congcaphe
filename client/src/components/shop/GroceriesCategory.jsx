@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import config from '../../config.json'
+import config from '../../config/config.json'
 import GroceryItem from './GroceryItem'
 import axios from 'axios'
 
@@ -9,7 +9,7 @@ export default class GroceriesCategory extends Component {
     }
     componentDidMount() {
         axios
-            .get(config.baseUrl + "api/grocery")
+            .get(config.apiUrl + "api/grocery")
             .then(data => {
                 const dataApi = data.data.data;
                 this.setState({ items: dataApi })
