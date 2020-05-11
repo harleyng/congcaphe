@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Item from './Item'
+import AliceCarousel from 'react-alice-carousel'
+import 'react-alice-carousel/lib/alice-carousel.css'
 
 export default class Category extends Component {
     state = {
@@ -29,11 +31,9 @@ export default class Category extends Component {
     }
     render() {
         return (
-            // <Carousel>
-            <div> 
-                {this.props.children}
-                <div className="item">
-                    {this.state.listItems.map(item=>(
+            <div className="items">
+                <AliceCarousel
+                    items = {this.state.listItems.map(item=>(
                         <React.Fragment key = {item.id}> 
                             <Item
                                 id = {item.id}
@@ -44,9 +44,15 @@ export default class Category extends Component {
                             />
                         </React.Fragment>
                     ))}
-                </div>
+                    autoPlayInterval = {2000}
+                    autoPlay = {true}
+                    dotsDisabled={true}
+                    buttonsDisabled={true}
+                    ref={(el) => (this.Carousel = el)}
+                />
+                <button className="slider-button prevbutton" onClick={() => this.Carousel.slidePrev()}><i class="fas fa-chevron-left"></i></button>
+                <button className="slider-button nextbutton" onClick={() => this.Carousel.slideNext()}><i class="fas fa-chevron-right"></i></button>
             </div>
-            // </Carousel> 
         )
     }
 }

@@ -34,12 +34,14 @@ npm install yarn
 ### You have to start 2 server for server and client
 #### Server
 ```
+cd server
 npm install 
 npm start
 ```
 
 #### Client
 ```
+cd client
 yarn
 yarn start
 ```
