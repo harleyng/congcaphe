@@ -12,6 +12,25 @@ const menuModel = require('../../models/shop/menu')
 //         }
 //     })
 // });
+menuRouter.get('/all', (req, res) => {
+    menuModel.find({}, (err, result) => {
+        if(err) res.send({ succes: 0, err })
+        else {
+            res.send({ succes: 1, data: result })
+        }
+    })
+})
+
+menuRouter.get('/:category', (req, res) => {
+    const category = req.params.category;
+    menuModel.find({ category: category }, (err, result) => {
+        if(err) res.send({ succes: 0, err })
+        else if (!result) res.send({ succes: 0, err: 'Item not existed' })
+        else {
+            res.send({ succes: 1, data: result })
+        }
+    })
+})
 
 menuRouter.get('/:category/:id', (req, res) => {
     const category = req.params.category;
@@ -37,27 +56,6 @@ menuRouter.get('/:category/:id', (req, res) => {
                     else if (!result) res.send({ succes: 0, err: 'Item not existed' })
                     else res.send({ succes: 1, data: result })
                 })
-            }
-        })
-    }
-})
-
-menuRouter.get('/:category', (req, res) => {
-    const category = req.params.category;
-    if (category == "all") {
-        menuModel.find({}, (err, result) => {
-            if(err) res.send({ succes: 0, err })
-            else {
-                res.send({ succes: 1, data: result });
-                console.log(result);
-            }
-        })
-    } else {
-        menuModel.find({ category: category }, (err, result) => {
-            if(err) res.send({ succes: 0, err })
-            else if (!result) res.send({ succes: 0, err: 'Item not existed' })
-            else {
-                res.send({ succes: 1, data: result })
             }
         })
     }

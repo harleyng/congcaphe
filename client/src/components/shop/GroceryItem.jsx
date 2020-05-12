@@ -5,7 +5,7 @@ export default class GroceryItem extends Component {
     render() {
         const url = `/grocery/${this.props.category}/${this.props.id}`;
         return (
-            <div className="item-container">
+            <div className="item-container shop-item-container">
                 <div className="item-img">
                     <Link to={url}>
                         <img src={this.props.img_link} alt={this.props.desc}/>

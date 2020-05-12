@@ -3,6 +3,26 @@ const groceryRouter = express.Router();
 
 const groceryModel = require('../../models/shop/grocery')
 
+groceryRouter.get('/all', (req, res) => {
+    groceryModel.find({}, (err, result) => {
+        if(err) res.send({ succes: 0, err })
+        else {
+            res.send({ succes: 1, data: result })
+        }
+    })
+})
+
+groceryRouter.get('/:category', (req, res) => {
+    const category = req.params.category;
+    groceryModel.find({ category: category }, (err, result) => {
+        if(err) res.send({ succes: 0, err })
+        else if (!result) res.send({ succes: 0, err: 'Item not existed' })
+        else {
+            res.send({ succes: 1, data: result })
+        }
+    })
+})
+
 groceryRouter.get('/:category/:id', (req, res) => {
     const category = req.params.category;
     const id = req.params.id;
@@ -27,27 +47,6 @@ groceryRouter.get('/:category/:id', (req, res) => {
                     else if (!result) res.send({ succes: 0, err: 'Item not existed' })
                     else res.send({ succes: 1, data: result })
                 })
-            }
-        })
-    }
-})
-
-groceryRouter.get('/:category', (req, res) => {
-    const category = req.params.category;
-    if (category == "all") {
-        groceryModel.find({}, (err, result) => {
-            if(err) res.send({ succes: 0, err })
-            else {
-                res.send({ succes: 1, data: result });
-                console.log(result);
-            }
-        })
-    } else {
-        groceryModel.find({ category: category }, (err, result) => {
-            if(err) res.send({ succes: 0, err })
-            else if (!result) res.send({ succes: 0, err: 'Item not existed' })
-            else {
-                res.send({ succes: 1, data: result })
             }
         })
     }

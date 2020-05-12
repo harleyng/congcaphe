@@ -19,19 +19,19 @@ export default class Header extends Component {
                         <div className="col-5">
                             <ul className="row justify-content-between">
                                 <li><a className="menu-item" href="/about"><span>câu chuyện</span></a></li>
-                                <li className="dropdown"><a className="menu-item" href="/posts"><span>bảng tin</span></a>
+                                <li className="dropdown"><a className="menu-item" href="/posts/all"><span>bảng tin</span></a>
                                     <ul className="dropdown-container">
-                                        <li className="drop-item menu-item"><a href=""><span>Cộng</span></a></li>
-                                        <li className="drop-item menu-item"><a href=""><span>Tin tức</span></a></li>
-                                        <li className="drop-item menu-item"><a href=""><span>Tuyển dụng</span></a></li>
-                                        <li className="drop-item menu-item"><a href=""><span>Đó đây</span></a></li>
-                                        <li className="drop-item menu-item"><a href=""><span>Pha chế</span></a></li>
+                                        <li className="drop-item menu-item"><a href="/posts/all"><span>Cộng</span></a></li>
+                                        <li className="drop-item menu-item"><a href="/posts/news"><span>Tin tức</span></a></li>
+                                        <li className="drop-item menu-item"><a href="/posts/hiring"><span>Tuyển dụng</span></a></li>
+                                        <li className="drop-item menu-item"><a href="/posts/culture"><span>Đó đây</span></a></li>
+                                        <li className="drop-item menu-item"><a href="/posts/bartender"><span>Pha chế</span></a></li>
                                     </ul>
                                 </li>
-                                <li className="dropdown"><a className="menu-item default"><span className="menu-item">tạp hoá</span></a>
+                                <li className="dropdown"><a className="menu-item default" href="/menu/all"><span className="menu-item">tạp hoá</span></a>
                                     <ul className="dropdown-container">
                                         <li className="drop-item menu-item"><a href="/menu/all"><span>Thực đơn</span></a></li>
-                                        <li className="drop-item menu-item"><a href="/grocery"><span>Quầy lưu niệm</span></a></li>
+                                        <li className="drop-item menu-item"><a href="/grocery/all"><span>Quầy lưu niệm</span></a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -47,9 +47,9 @@ export default class Header extends Component {
                                 <li><a className="menu-item" href="/store"><span>cửa hàng</span></a></li>
                                 <li className="dropdown"><a className="menu-item" href="/contact"><span>liên hệ</span></a>
                                     <ul className="dropdown-container">
-                                        <li className="drop-item menu-item"><a href=""><span>Cộng lắng nghe</span></a></li>
-                                        <li className="drop-item menu-item"><a href=""><span>Hợp tác</span></a></li>
-                                        <li className="drop-item menu-item"><a href=""><span>Về chúng tôi</span></a></li>
+                                        <li className="drop-item menu-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfztjxkPcFSeHBwkAEcXZ0hEPitFNTegLaXQL5dEZ2b86-z2A/viewform"><span>Cộng lắng nghe</span></a></li>
+                                        <li className="drop-item menu-item"><a href="/collab"><span>Hợp tác</span></a></li>
+                                        <li className="drop-item menu-item"><a href="/contact"><span>Về chúng tôi</span></a></li>
                                     </ul>
                                 </li>
                             </ul>

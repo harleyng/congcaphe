@@ -5,7 +5,7 @@ export default class MenuItem extends Component {
     render() {
         const url = `/menu/r`;
         return (
-            <div className="item-container">
+            <div className="item-container shop-item-container">
                 <div className="item-img">
                     <Link to={url}>
                         <img src={this.props.img_link} alt={this.props.desc}/>

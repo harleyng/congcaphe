@@ -19,23 +19,23 @@ export default class Contact extends Component {
                         <div className="contact-list">
                             <ul>
                                 <li>
-                                    <a className="contact-title">PRESS INQUIRIES AND GENERAL QUESTIONS</a>
+                                    <h6 className="contact-title">PRESS INQUIRIES AND GENERAL QUESTIONS</h6>
                                     <p>info@congcaphe.com</p>
                                 </li>
                                 <li>
-                                    <a className="contact-title">PR &amp; MARKETING INQUIRIES</a>
+                                    <h6 className="contact-title">PR &amp; MARKETING INQUIRIES</h6>
                                     <p>cmo@congcaphe.com</p>
                                 </li>
                                 <li>
-                                    <a className="contact-title">BUSINESS PARTNERSHIP INQUIRIES</a>
+                                    <h6 className="contact-title">BUSINESS PARTNERSHIP INQUIRIES</h6>
                                     <p>fr@congcaphe.com</p>
                                 </li>
                                 <li>
-                                    <a className="contact-title">INTERNATIONAL BUSINESS PARTNERSHIP INQUIRIES</a>
+                                    <h6 className="contact-title">INTERNATIONAL BUSINESS PARTNERSHIP INQUIRIES</h6>
                                     <p>fr.intl@congcaphe.com</p>
                                 </li>
                                 <li>
-                                    <a className="contact-title">TÌM HIỂU THÔNG TIN NHƯỢNG QUYỀN</a>
+                                    <h6 className="contact-title">TÌM HIỂU THÔNG TIN NHƯỢNG QUYỀN</h6>
                                 </li>
                             </ul>
                         </div>

@@ -48,6 +48,9 @@ export default class MenuDetail extends Component {
                             <h3>{this.state.name}</h3>
                             <h5><strong>{this.state.price}</strong></h5>
                             <p dangerouslySetInnerHTML={{__html: this.state.description}}/>
+                            <a className="order" href="https://docs.google.com/forms/d/1_8tT4k5hfKVgWGgc66JYx2jrpruH4iRutXWr0zg0z4o/viewform?ts=5c821709&edit_requested=true">
+                                <button className="btn">Đặt Mua</button>
+                            </a>
                         </div>
                     </div>
                 </div>

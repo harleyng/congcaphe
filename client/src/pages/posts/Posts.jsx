@@ -1,12 +1,21 @@
 import React, { Component } from 'react'
 import {Helmet} from 'react-helmet';
-import Category from '../../components/posts/Category'
+import axios from 'axios'
+import config from '../../config/config.json'
+import Item from '../../components/posts/Item'
 import logo from '../../assets/img/logo.png'
-import $ from 'jquery'
-import {setAttributes} from './setAttributes'
-var nodemailer = require('nodemailer');
+import LoadMore from '../../components/LoadMore';
+// import $ from 'jquery'
+// import {setAttributes} from './setAttributes'
+// var nodemailer = require('nodemailer');
 
 export default class News extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            items: []
+        }
+    }
         // sendMail() {
         //     let mail = $('#registeredEmail');
         //     let protocol = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(mail.value);
@@ -41,6 +50,15 @@ export default class News extends Component {
         //     }
         // }
     
+    componentDidMount() {
+        const category = this.props.match.params.category;
+        axios
+            .get(config.apiUrl + `api/post/${category}`)
+            .then(data => {
+                const dataApi = data.data.data;
+                this.setState({ items: dataApi })
+            })
+    }
     render() {
         return (
             <div className="page Container">
@@ -50,7 +68,20 @@ export default class News extends Component {
                 <div className="container pageContent">
                     <div className="row">
                         <div className="col-8">
-                            <Category/>
+                            <div className="items">
+                                {this.state.items.map(item=>(
+                                    <React.Fragment key = {item.id}>
+                                        <Item
+                                            id = {item.id}
+                                            title = {item.title}
+                                            description = {item.description}
+                                            img_link = {item.img_link}
+                                            url = {item.url}
+                                        />
+                                    </React.Fragment>
+                                ))}
+                            </div>
+                            <LoadMore/>
                         </div>
                         <div className="col-4">
                             <div className="followPosts">
@@ -59,7 +90,7 @@ export default class News extends Component {
                                 <div className="followPosts-desc"><p>Nhận những thông tin mới nhất từ Cộng Cà Phê.</p></div>
                                 <div className="emailRegister-posts-container">
                                     <input id="registeredEmail" className="emailRegister emailRegister-posts" type="email" placeholder="Nhập địa chỉ email"/>
-                                    <button className="emailSubmit emailSubmit-posts" onClick={this.sendMail} type="submit">ĐĂNG KÝ</button>
+                                    <button className="emailSubmit emailSubmit-posts" type="submit">ĐĂNG KÝ</button>
                                 </div>
                             </div>
                         </div>

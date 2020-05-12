@@ -7,12 +7,12 @@ export default class NewsItem extends Component {
                 <div className="row">
                     <div className="item-img post-item-img col-5">
                         <a href={this.props.url}>
-                            <img src={this.props.img_link} alt={this.props.desc}/>
+                            <img src={this.props.img_link} alt={this.props.description}/>
                         </a>
                     </div>
                     <div className="item-content col-7">
                         <div className="item-title">{this.props.title}</div>
-                        <div className="item-desc">{this.props.desc}</div>
+                        <div className="item-desc">{this.props.description}</div>
                     </div>
                 </div>
             </div>

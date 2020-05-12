@@ -5,7 +5,7 @@ import {BrowserRouter,Switch,Route} from 'react-router-dom'
 import MasterLayout from './layouts/master/MasterLayout'
 import Menu from './pages/shop/Menu'
 import Groceries from './pages/shop/Groceries'
-import News from './pages/posts/News'
+import Posts from './pages/posts/Posts'
 import Career from './pages/Career'
 import MenuDetail from './pages/shop/MenuDetail'
 import GroceryDetail from './pages/shop/GroceryDetail'
@@ -23,7 +23,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route path="/about" component={About}/>
-            <Route path="/posts" component={News}/>
+            <Route path="/posts/:category" component={Posts}/>
             <Route exact path="/menu/:category" component={Menu}/>
             <Route exact path="/menu/:category/:id" component={MenuDetail}/>
             <Route exact path="/grocery/:category" component={Groceries}/>
