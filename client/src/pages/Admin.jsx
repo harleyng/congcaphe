@@ -3,12 +3,15 @@ import config from '../config/config.json'
 import axios from 'axios'
 
 export default class Admin extends Component {
-    state = {
-        category: '',
-        name: '',
-        price: '',
-        description: '',
-        img_link: ''
+    constructor(props) {
+        super(props)
+        this.state = {
+            category: '',
+            name: '',
+            price: '',
+            description: '',
+            img_link: ''
+        }
     }
     handleCategoryChange = (event) => {
         this.setState({

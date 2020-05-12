@@ -421,26 +421,44 @@ a.slider-more {
 }
 
 /* //////////////////// 6.MENU/ GROCERIES PAGE ///////////////////// */
+.load-container {
+    position: static !important;
+}
+#load {
+    border: solid #3c5e2c 2px;
+    color: #3c5e2c;
+    font-weight: bold;
+}
+#load:focus {
+    box-shadow: none;
+}
+.items {
+    height: 80%;
+}
 .menuList {
     line-height: 2rem;
     padding-inline-start: 80px;
     font-weight: 700;
 }
 .item-img img {
-    max-height: 210px;
+    max-width: 90%;
     border: solid #3c5e2c 2px;
-    margin: 0 30px 20px 0;
+    margin-right: 30px;
+    margin-bottom: 5px;
     opacity: 1;
     transition: opacity .5s ease;
 }
 .item-container {
+    display: none;
     float: left;
+    width: 33%;
 }
 .item-img img:hover {
     opacity: .5;
 }
 .item-content {
     color: #555555;
+    margin-bottom: 20px;
 }
 .item-name {
     font-family: 'BeauLuloClean-OneBold';

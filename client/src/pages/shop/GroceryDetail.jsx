@@ -5,17 +5,21 @@ import config from '../../config/config.json'
 
 
 export default class MenuDetail extends Component {
-    state = {
-        category: '',
-        name: '',
-        price: '',
-        description: '',
-        img_link: ''
+    constructor(props) {
+        super(props)
+        this.state = {
+            category: '',
+            name: '',
+            price: '',
+            description: '',
+            img_link: ''
+        }
     }
     componentDidMount() {
+        const category = this.props.match.params.category;
         const id = this.props.match.params.id;
         axios
-            .get(config.apiUrl + `api/grocery/${id}`)
+            .get(config.apiUrl + `api/grocery/${category}/${id}`)
             .then(data => {
                 const dataApi = data.data.data;
 

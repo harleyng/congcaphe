@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 export default class GroceryItem extends Component {
     render() {
-        const url = `/grocery/${this.props.id}`;
+        const url = `/grocery/${this.props.category}/${this.props.id}`;
         return (
             <div className="item-container">
                 <div className="item-img">

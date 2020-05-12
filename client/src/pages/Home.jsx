@@ -31,7 +31,7 @@ export default class Home extends Component {
                         </div>
                     </div>
                     <div className="banner banner3">
-                        <a href="#">
+                        <a href="/posts">
                             <span>tin tức nổi bật</span>
                             <p className="mb-0 mt-3">"Lao động hăng say, tình hay sẽ đến", Cộng chúc bạn một ngày&nbsp;mới thật nhiều năng lượng để hoàn thành công việc thật tốt!</p>
                         </a>

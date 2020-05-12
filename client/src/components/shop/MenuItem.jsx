@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 export default class MenuItem extends Component {
     render() {
-        const url = `/menu/${this.props.id}`;
+        const url = `/menu/r`;
         return (
             <div className="item-container">
                 <div className="item-img">

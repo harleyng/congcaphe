@@ -24,10 +24,10 @@ function App() {
             <Route exact path="/" component={Home}/>
             <Route path="/about" component={About}/>
             <Route path="/posts" component={News}/>
-            <Route exact path="/menu" component={Menu}/>
-            <Route path="/menu/:id/" component={MenuDetail}/>
-            <Route exact path="/grocery" component={Groceries}/>
-            <Route path="/grocery/:id/" component={GroceryDetail}/>
+            <Route exact path="/menu/:category" component={Menu}/>
+            <Route exact path="/menu/:category/:id" component={MenuDetail}/>
+            <Route exact path="/grocery/:category" component={Groceries}/>
+            <Route path="/grocery/:category/:id" component={GroceryDetail}/>
             <Route path="/career" component={Career}/>
             <Route path="/store" component={Store}/>
             <Route path="/contact" component={Contact}/>

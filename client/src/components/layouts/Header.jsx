@@ -30,7 +30,7 @@ export default class Header extends Component {
                                 </li>
                                 <li className="dropdown"><a className="menu-item default"><span className="menu-item">tạp hoá</span></a>
                                     <ul className="dropdown-container">
-                                        <li className="drop-item menu-item"><a href="/menu"><span>Thực đơn</span></a></li>
+                                        <li className="drop-item menu-item"><a href="/menu/all"><span>Thực đơn</span></a></li>
                                         <li className="drop-item menu-item"><a href="/grocery"><span>Quầy lưu niệm</span></a></li>
                                     </ul>
                                 </li>
