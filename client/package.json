@@ -29,7 +29,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "deploy": "cp src/config/production/config.js src/config/ && git push heroku master"
+    "deploy": "cp src/config/production/config.js src/config/ && git push heroku master",
+    "cypress:open": "cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"

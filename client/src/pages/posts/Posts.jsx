@@ -88,9 +88,9 @@ export default class News extends Component {
                                 <div className="followPosts-title">ĐĂNG KÝ THEO DÕI</div>
                                 <div><img src={logo} alt="logo Cộng"/></div>
                                 <div className="followPosts-desc"><p>Nhận những thông tin mới nhất từ Cộng Cà Phê.</p></div>
-                                <div className="emailRegister-posts-container">
-                                    <input id="registeredEmail" className="emailRegister emailRegister-posts" type="email" placeholder="Nhập địa chỉ email"/>
-                                    <button className="emailSubmit emailSubmit-posts" type="submit">ĐĂNG KÝ</button>
+                                <div className="emailRegister-posts-container row m-0">
+                                    <input id="registeredEmail" className="col-8 emailRegister emailRegister-posts m-0" type="email" placeholder="Nhập địa chỉ email"/>
+                                    <button className="col-4 emailSubmit emailSubmit-posts m-0" type="submit">ĐĂNG KÝ</button>
                                 </div>
                             </div>
                         </div>

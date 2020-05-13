@@ -5,7 +5,7 @@ export default class NewsItem extends Component {
         return (
             <div className="item-container post-item-container">
                 <div className="row">
-                    <div className="item-img post-item-img col-5">
+                    <div className="post-item-img col-5 p-0">
                         <a href={this.props.url}>
                             <img src={this.props.img_link} alt={this.props.description}/>
                         </a>

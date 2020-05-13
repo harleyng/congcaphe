@@ -48,7 +48,7 @@ export default class Header extends Component {
                                 <li className="dropdown"><a className="menu-item" href="/contact"><span>liên hệ</span></a>
                                     <ul className="dropdown-container">
                                         <li className="drop-item menu-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfztjxkPcFSeHBwkAEcXZ0hEPitFNTegLaXQL5dEZ2b86-z2A/viewform"><span>Cộng lắng nghe</span></a></li>
-                                        <li className="drop-item menu-item"><a href="/collab"><span>Hợp tác</span></a></li>
+                                        <li className="drop-item menu-item"><a href="/contact"><span>Hợp tác</span></a></li>
                                         <li className="drop-item menu-item"><a href="/contact"><span>Về chúng tôi</span></a></li>
                                     </ul>
                                 </li>
